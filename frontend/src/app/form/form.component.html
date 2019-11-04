@@ -1,0 +1,22 @@
+<form (ngSubmit)="save()" #usuarioForm="ngForm">
+  <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]='usuario.nome' required>
+  </div>
+
+  <div class="form-group">
+      <label for="sexo">Sexo</label>
+      <select class="form-control" id="sexo" name="sexo" [(ngModel)]='usuario.sexo' required>
+        <option disabled selected>Escolha o sexo</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+      </select>
+  </div>
+
+  <div class="form-group">
+      <label for="data_nascimento">Data de nascimento</label>
+      <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" [(ngModel)]='usuario.data_nascimento' required>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Salvar usuário</button>
+</form>

@@ -1,0 +1,27 @@
+<br />
+<a [routerLink]='["/form"]'><button class='btn btn-primary mb-2'>Criar novo usuário</button></a>
+<br />
+<table class="table">
+  <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Data nascimento</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <th scope="row">{{usuario.id}}</th>
+        <td>{{usuario.nome}}</td>
+        <td>{{usuario.sexo}}</td>
+        <td>{{usuario.data_nascimento}}</td>
+        <td>
+          <a [routerLink]='["/form", usuario.id]'><button class='btn btn-primary mr-2'>Ver/Editar</button></a>
+          <button class='btn btn-danger' (click)='delete(usuario.id)'>Apagar</button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
