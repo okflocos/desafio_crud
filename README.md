@@ -1,6 +1,6 @@
 # Desafio Crud
 
-Desafio de criar uma API em laravel, banco de dados de usuário com MYSQL, frontend com Angular, frontend e backend apartados.
+Desafio de criar uma API utilizando laravel, banco de dados de usuário com MYSQL, frontend com Angular, frontend e backend apartados.
 
 ## Objetivo
 No desafio era necessário criar uma API em Laravel, que irá comunicar com um banco de dados MYSQL, do qual deve acessar uma tabela de usuários, o frontend deveria ser CRUD em Angular. A regra era o frontend e backend estarem apartados. Nesse caso a API acessa uma tabela de usuário onde você pode fazer um cadastro e acessar ele.
